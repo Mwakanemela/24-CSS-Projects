@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+:root {
+  --body-bg: #1E1f26;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4:#ce4993;
+  --grad-color5: #6a0d83;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button-border {
+  background: linear-gradient(
+    115deg, var(--grad-color1), var(--grad-color2), var(--grad-color3), var(--grad-color4), var(--grad-color5)
+  );
+  padding: 2px;
+}
+
+.button {
+  background-color: var(--btn-bg);
+  border: none;
+  color: var(--btn-color);
+  /* padding: 15px 32px; */
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .1em;
+  /* border-radius: 10px; */
+  transition: 0.5s;
+}
+
+.button-border:hover {
+  background: linear-gradient(
+    115deg, var(--grad-color4), var(--grad-color5), var(--grad-color1), var(--grad-color2), var(--grad-color3)
+  );
+}
+
+.button-border:hover .button {
+  color: var(--btn-color-hover);
+  padding: 1.2em 1.7em;
+}
